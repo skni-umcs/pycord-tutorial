@@ -17,6 +17,3 @@ Jak samodzielnie stworzyć profil dla bota i wygenerować token
 
 https://docs.pycord.dev/en/stable/api/index.html
 Pycord API
-
-https://www.python.org
-Stąd moż
