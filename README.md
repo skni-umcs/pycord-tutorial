@@ -1,7 +1,7 @@
 # Poradnik Pycorda
 Bot zbudowany pod warsztaty w ramach CheckIT 2024
 
-Bot wymaga pythona, trzeba go pobrać z https://www.python.org zanim zacznie się poniższe kroki.
+Bot wymaga pythona, trzeba go pobrać z https://www.python.org i zainstalować zanim wykona się poniższe kroki.
 
 # Jak odpalić bota
 1. (Tylko przy pierwszym uruchamianiu) W pliku głównym projektu w terminalu wykonać
