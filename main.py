@@ -5,6 +5,8 @@ import os
 #The main library for using discord API
 import discord
 
+#Ai integration file located in the same folder as main.py
+from ai import ask_ai
 
 load_dotenv() # load all the variables from the env file
 bot = discord.Bot()
@@ -16,6 +18,10 @@ async def on_ready():
 @bot.slash_command(name = "hello", description = "Say hello to the bot")
 async def hello(ctx):
     await ctx.respond("Hey!")
+
+@bot.slash_command(name = "ai", description = "Use AI")
+async def ai(ctx, prompt: str):
+    await ctx.respond(ask_ai(prompt))
 
 bot.run(os.getenv('TOKEN')) #Runs the bot with the token
 
