@@ -20,7 +20,8 @@ async def hello(ctx):
     await ctx.respond("Hey!")
 
 @bot.slash_command(name = "ai", description = "Use AI")
-async def ai(ctx, prompt: str):
+async def ai(ctx: discord.ApplicationContext, prompt: str):
+    await ctx.response.defer() #important line so that interaction doesn't timeout before AI answers
     await ctx.respond(ask_ai(prompt))
 
 bot.run(os.getenv('TOKEN')) #Runs the bot with the token
